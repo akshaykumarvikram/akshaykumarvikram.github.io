@@ -23,7 +23,7 @@ description: "The portfolio and technical blog of Akshay Kumar Vikram – provid
 author: Akshay Kumar Vikram
 
 # This URL is the main address for absolute links. Don't include a slash at the end.
-url: 'http://akshaykumarvikram.io'
+url: 'https://akshaykumarvikram.github.io'
 baseurl: ''
 
 # This is for the editing function in _/includes/improve_content
@@ -87,9 +87,6 @@ exclude:
     - LICENSE
     - README.md
     - INSTALL.md
-    - tmp
-    - scripts
-    - old_blog_content
 
 
 # The language setting is used in /includes/header.html for html-settings
@@ -156,8 +153,8 @@ defaults:
 #   ___/ / /___/ /_/ /
 #  /____/_____/\____/    Verify Website to Webmaster Tools
 
-google_author:             "https://plus.google.com/u/0/103791827597799558729"
-google_site_verification:  "hb0oFgJAnd2i2LvJYSEIofF5sc24xc8hx2tTNittvHA"
+google_author:             ""
+google_site_verification:  ""
 # bing_webmastertools_id:    "0FB4C028ABCF07C908C54386ABD2D97F"
 # alexa_verify_id:         ""
 
