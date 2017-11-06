@@ -1,0 +1,69 @@
+{{#if video}}
+---
+layout: video
+show_meta: true
+title: "{{title}}"
+meta_title: "Chris Henrick featured work: {{title}}"
+teaser: "{{description}}"
+tags:
+    - {{#each tags}}{{this}} {{/each}}
+category:
+    - work
+iframe: "<iframe width='970' height='546' src='{{video.embed}}' frameborder='0' allowfullscreen></iframe>"
+video:
+    embedURL: "{{video.embed}}"
+    contentURL: "{{video.url}}"
+    thumbnailUrl: "{{imgs}}"
+header: no
+permalink: "/work/{{permalink}}"
+---
+{{else}}
+---
+layout: page-fullwidth
+show_meta: true
+title: "{{title}}"
+meta_title: "Chris Henrick featured work: {{title}}"
+teaser: "{{description}}"
+date: "{{date}}"
+tags:
+  - {{#each tags}}{{this}} {{/each}}
+category:
+  - work
+header: no
+permalink: "/work/{{permalink}}"
+---
+{{/if}}
+
+{{#if link}}
+<strong>Project Link:</strong> <a href="{{link}}" target="_blank">{{title}}</a>
+{{/if}}
+
+{{#if description_long}}
+{{{description_long}}}
+{{/if}}
+
+{{#if tech}}
+<strong>Technologies Used:</strong> {{#each tech }} - {{this}} {{/each}}
+{{/if}}
+
+{{#if code}}
+<strong><a href="{{code}}" target="_blank">View code on Github</a></strong>
+{{/if}}
+
+{{#unless video}}
+{{#if tiles}}
+  <iframe class="tiles" width='100%' height='100%' frameBorder='0' src='{{tiles}}'></iframe>
+{{else}}
+{{#each imgs}}
+  <a href="\{{site.url}}\{{site.baseurl}}/images/{{this}}" target="_blank">
+    <img class="portfolio lazy" data-original="\{{site.url}}\{{site.baseurl}}/images/{{this}}" width="100%" height="100%" alt="{{this}}">
+    <noscript>
+      <img src="\{{site.url}}\{{site.baseurl}}/images/{{this}}" width="100%" height="100%" alt="{{this}}">
+    </noscript>
+  </a>
+{{/each}}
+{{/if}}
+
+{{/unless}}
+
+[<span class="back-arrow">&#8619;</span> Back to the Portfolio]({{ site.url }}{{ site.baseurl }}/work/)

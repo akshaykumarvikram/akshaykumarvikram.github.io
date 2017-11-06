@@ -6,41 +6,23 @@
 #
 layout: frontpage
 header:
-  image_fullwidth: you-can-delete-me-header.png
+  title: Akshay Kumar Vikram 
+  image_fullwidth: background.png
 widget1:
-  title: "Widget 1"
-  url: 'http://domain.de/must-be-absolut-url-like-this-one/'
-  image: 'http://dummyimage.com/302x183/334d5c/efc94c.png&text=Placeholder'
-  text: ''
+  title: "My Work"
+  url: '/work/'
+  image: 'http://www.canecto.com/wp-content/uploads/2017/03/StockSnap_U3W2SHOLWQ.jpg'
+  text: '<strong>Encompasses:</strong> Web Scraping - Data Wrangling - Data Anaysis - Machine Learning - NLP - AI - Web Development' 
 widget2:
-  title: "Widget 2"
-  url: 'http://domain.de/must-be-absolut-url-like-this-one/'
-  image: 'http://dummyimage.com/302x183/334d5c/efc94c.png&text=Placeholder'
-  text: ''
+  title: "Blog"
+  url: '/blog/'
+  image: 'http://zyzixun.net/data/out/20/2919970-blog-wallpapers.jpg'
+  text: 'My ramblings on previous projects and solving problems relating to the Data Science and AI.' 
 widget3:
-  title: "Widget 3"
-  url: 'http://domain.de/must-be-absolut-url-like-this-one/'
-  image: 'http://dummyimage.com/302x183/334d5c/efc94c.png&text=Placeholder'
-  text: ''
-#
-# Use the call for action to show a button on the frontpage
-#
-# To make internal links, just use a permalink like this
-# url: /getting-started/
-#
-# To style the button in different colors, use no value
-# to use the main color or success, alert or secondary.
-# To change colors see sass/_01_settings_colors.scss
-#
-callforaction:
-  url: https://tinyletter.com/feeling-responsive
-  text: Inform me about new updates and features ›
-  style: alert
+  title: "Talk to me"
+  url: '/contact/'
+  image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQv-DgMe0rfBJMZ2yMLLpaoIdS-GDZTL4V5bydwg4G48gOx_bCU4w'
+  text: 'Want advice on how to get creative with your data? Collabrate on an intresting Project? Or just want to say hello?'
 permalink: /index.html
 ---
-<div id="videoModal" class="reveal-modal large" data-reveal="">
-  <div class="flex-video widescreen vimeo" style="display: block;">
-    <iframe width="1280" height="720" src="https://www.youtube.com/embed/3b5zCFSmVvU" frameborder="0" allowfullscreen></iframe>
-  </div>
-  <a class="close-reveal-modal">&#215;</a>
-</div>
+

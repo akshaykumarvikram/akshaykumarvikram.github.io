@@ -1,0 +1,60 @@
+{
+  "author": "Akshay Kumar Vikram",
+  "work": [
+  {
+    "title": "Medibot",
+    "tags": ["Web", "AI","NLP","Hackathon"],
+    "description": "An AI based interactive search interface to search biomedical literature.",
+    "description_long": "An AI based interactive search interface to search biomedical literature.",
+    "tech": ["Node.Js", "Microsoft-BotFramework", "IBM-Watson", "Javascript ES6", "NLP", "Chatbot", "Microsot-Azure"],
+    "thumb": "Search-Bot.jpg",
+    "imgs": ["nyc-crash-mapper01.jpg", "nyc-crash-mapper02.jpg", "nyc-crash-mapper03.jpg", "nyc-crash-mapper04.jpg", "nyc-crash-mapper05.jpg", "nyc-crash-mapper06.jpg", "nyc-crash-mapper07.jpg", "nyc-crash-mapper08.jpg", "nyc-crash-mapper09.jpg", "nyc-crash-mapper10.jpg", "nyc-crash-mapper11.jpg", "nyc-crash-mapper12.jpg"],
+    "size": "width3",
+    "date": "2017-03-03"
+  },
+  {
+    "title": "Kaggle Challenge-Advanced-Regression-Techniques",
+    "tags": ["Data Analytics", "Machine Learning","Exploratory Data Analysis","Kaggle"],
+    "description": "Prediction Housing Prices in Iowa. Exploratory Data Analysis, Dealing with Missing Values, Data Munging, Ensembled Regression Model using Stacked Regressor, XGBoost and microsoft LightGBM",
+    "description_long": "",
+    "tech": ["Python", "Jupyter-notebook"],
+    "thumb": "housing.jpg",
+    "imgs": ["nyc-crash-mapper01.jpg", "nyc-crash-mapper02.jpg", "nyc-crash-mapper03.jpg", "nyc-crash-mapper04.jpg", "nyc-crash-mapper05.jpg", "nyc-crash-mapper06.jpg", "nyc-crash-mapper07.jpg", "nyc-crash-mapper08.jpg", "nyc-crash-mapper09.jpg", "nyc-crash-mapper10.jpg", "nyc-crash-mapper11.jpg", "nyc-crash-mapper12.jpg"],
+    "size": "width3",
+    "date": "2017-03-03"
+  },
+  {
+    "title": "Kaggle Renthop challenge",
+    "tags": ["Data Analytics", "Machine Learning","Exploratory Data Analysis","Kaggle"],
+    "description": "Prediction popularity of rental listings.Exploratory Data Analysis, Feature Engineering using Geo-spatial Data, followed by build an Classification model using XGBoost",
+    "description_long": "",
+    "tech": ["Python", "Jupyter-notebook"],
+    "thumb": "renthop.jpg",
+    "imgs": ["nyc-crash-mapper01.jpg", "nyc-crash-mapper02.jpg", "nyc-crash-mapper03.jpg", "nyc-crash-mapper04.jpg", "nyc-crash-mapper05.jpg", "nyc-crash-mapper06.jpg", "nyc-crash-mapper07.jpg", "nyc-crash-mapper08.jpg", "nyc-crash-mapper09.jpg", "nyc-crash-mapper10.jpg", "nyc-crash-mapper11.jpg", "nyc-crash-mapper12.jpg"],
+    "size": "width3",
+    "date": "2017-04-23"
+  },
+  
+  {
+    "title": "Genomic Data Analysis",
+    "tags": ["Data Analytics", "Machine Learning","Exploratory Data Analysis","Kaggle"],
+    "description": "Identifying and Classifing Genetic mutations that contribute to tumer growthclassify genetic mutations that contribute to cancer tumor growth (so-called 'drivers') in the presence of mutations that are don't affect the tumors ('passengers').",
+    "description_long": "",
+    "tech": ["Python", "Jupyter-notebook"],
+    "thumb": "cancer.jpg",
+    "imgs": ["nyc-crash-mapper01.jpg", "nyc-crash-mapper02.jpg", "nyc-crash-mapper03.jpg", "nyc-crash-mapper04.jpg", "nyc-crash-mapper05.jpg", "nyc-crash-mapper06.jpg", "nyc-crash-mapper07.jpg", "nyc-crash-mapper08.jpg", "nyc-crash-mapper09.jpg", "nyc-crash-mapper10.jpg", "nyc-crash-mapper11.jpg", "nyc-crash-mapper12.jpg"],
+    "size": "width3",
+    "date": "2017-03-03"
+  },
+  {
+    "title": "Project Steve",
+    "tags": ["Artificial Intelligence", "IBM Watson","NLP","Chatbot"],
+    "description": "Building a conversational agent called Steve for Stevens institute of Technology that can engage with student round the clock and provide them with the information they need in real-time using Microsoft bot-framework.",
+    "description_long": "",
+    "tech": ["Python", "Jupyter-notebook"],
+    "thumb": "projectSteve.jpeg",
+    "imgs": ["nyc-crash-mapper01.jpg", "nyc-crash-mapper02.jpg", "nyc-crash-mapper03.jpg", "nyc-crash-mapper04.jpg", "nyc-crash-mapper05.jpg", "nyc-crash-mapper06.jpg", "nyc-crash-mapper07.jpg", "nyc-crash-mapper08.jpg", "nyc-crash-mapper09.jpg", "nyc-crash-mapper10.jpg", "nyc-crash-mapper11.jpg", "nyc-crash-mapper12.jpg"],
+    "size": "width3",
+    "date": "2017-03-03"
+  }  ]
+}

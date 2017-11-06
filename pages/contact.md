@@ -1,15 +1,26 @@
 ---
 layout: page
 title: "Contact"
-meta_title: "Contact Us"
+meta_description: "Contact Akshay Kumar Vikram"
 subheadline: ""
-teaser: ""
+teaser: "Want to get in touch with me? Please use the contact form below."
 permalink: "/contact/"
+header: no
 ---
 
-- [Wufoo][1]
-- [Google Forms][2]
+<div class="panel">
+<!-- <iframe width="100%" height="650" frameborder="0" scrolling="no" src="https://phlowmedia.wufoo.com/embed/z7x3k1/"></iframe>
+-->
+  <form action="https://formspree.io/akshaykumarvikram@yahoo.com" method="POST" class="form-stacked form-light">
+    <input type="text" name="email" class="input mobile-block" placeholder="Email Address">
+    <textarea type="text" name="content" class="input mobile-block" rows="5" placeholder="What would you like to say?"></textarea>
+    <input type="submit" class="button button-blue button-big mobile-block" value="Say Hello">
+  </form>
+</div>
+
+<sub>
+    Pssst! If you need a fabulous contact form for your website, I suggest you use [Formspree][1].
+</sub>
 
 
- [1]: http://www.wufoo.com/
- [2]: https://www.google.com/intl/de_de/forms/about/
+ [1]: https://formspree.io/

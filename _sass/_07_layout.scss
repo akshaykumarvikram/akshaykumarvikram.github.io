@@ -23,7 +23,7 @@
 ------------------------------------------------------------------- */
 
 body.video,
-body.video #masthead-no-image-header { background: #000; }
+body.video #masthead-no-image-header { background: $grey-15; }
 body.video #masthead-no-image-header { margin-bottom: 60px; }
 body.video h1,
 body.video h2,
@@ -64,18 +64,26 @@ body.video cite { color: #fff; }
 ------------------------------------------------------------------- */
 
 #masthead {
-    background-color: $primary-color;
+    background-color: $grey-16;
 }
+
 #masthead-no-image-header {
-    background-color: $primary-color;
+    background-color: $grey-16;
 }
 #masthead-with-text {
     text-align: center;
     font-size: rem-calc(54);
     font-family: $header-font-family;
+    font-weight: bolder;
     color: #fff;
     text-transform: uppercase;
-    text-shadow: 0 2px 3px rgba(0,0,0,.4);
+    text-shadow: 2px 3px 3px rgba(0,0,0,1);
+    letter-spacing: 0.1em;
+
+    // center the text in the masthead
+    .row {
+        @include vertical-align();
+    }
 }
 #masthead-no-image-header {
     height: 175px;
@@ -103,7 +111,8 @@ body.video cite { color: #fff; }
     #masthead-with-text {
         height: 220px;
         padding: 30px 0;
-        font-size: rem-calc(36);
+        font-size: rem-calc(32);
+        letter-spacing: 0.01em;
     }
     #masthead-no-image-header {
         display: none;
@@ -218,6 +227,10 @@ body.video cite { color: #fff; }
 #page-meta .button {
     background: $grey-5;
     border: 0;
+    
+    &.small {
+        padding: 10px;
+    }
 }
 #page-meta .button {
     color: #fff;
@@ -244,7 +257,7 @@ body.video cite { color: #fff; }
 ------------------------------------------------------------------- */
 
 #up-to-top {
-    padding: 160px 0 10px 0;
+    padding: 60px 0 10px 0;
 }
 #up-to-top a {
     font-size: 24px;
@@ -252,7 +265,8 @@ body.video cite { color: #fff; }
     border-radius: 3px;
 }
 #up-to-top a:hover {
-    background: $grey-2;
+    background: $grey-10;
+    color: lighten($ci-4, 10%);
 }
 
 
@@ -292,33 +306,43 @@ body.video cite { color: #fff; }
     background: $subfooter-bg;
     color: $subfooter-color;
     padding-top: 30px;
-    padding-bottom: 10px;
 }
-    #subfooter-left ul.inline-list {
-        float: left;
-    }
-    #subfooter .credits a {
-        color: $subfooter-link-color;
-        border: 0;
-        text-transform: uppercase;
-        &:hover {
-            color: #fff;
-        }
-    }
 
-    #subfooter .social-icons li a {
-        font-size: rem-calc(23);
-        display: block;
-        width: 36px;
-        border-radius: 50%;
-        color: $subfooter-bg;
-        background: $subfooter-color;
-        text-align: center;
-    }
-    #subfooter .social-icons li a:hover {
-        background: $subfooter-bg;
+#subfooter-left ul.inline-list {
+    float: left;
+}
+
+.credits a {
+    color: $subfooter-link-color;
+    border: 0;
+    text-transform: uppercase;
+    &:hover {
         color: #fff;
+  }
+}
+
+.social-icons {
+    margin-bottom: 10px !important;
+
+// Beware of SCSS-Syntax here
+  li {
+    padding: 0 0 20px 0;
+  }
+  a {
+    font-size: rem-calc(23);
+    display: block;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    color: $subfooter-bg;
+    background: $subfooter-color;
+    text-align: center;
+    &:hover {
+      background: $subfooter-bg;
+      color: #fff;
     }
+  }
+}
 
 
 

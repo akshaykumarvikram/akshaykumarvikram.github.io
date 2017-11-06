@@ -1,35 +1,34 @@
 # ASCII-Font › http://patorjk.com/software/taag/#p=display&f=Slant&t=Phlow
 #
-#      _____ _ __          _____      __  __  _                 
+#      _____ _ __          _____      __  __  _
 #     / ___/(_) /____     / ___/___  / /_/ /_(_)___  ____ ______
 #     \__ \/ / __/ _ \    \__ \/ _ \/ __/ __/ / __ \/ __ `/ ___/
-#    ___/ / / /_/  __/   ___/ /  __/ /_/ /_/ / / / / /_/ (__  ) 
-#   /____/_/\__/\___/   /____/\___/\__/\__/_/_/ /_/\__, /____/  
-#                                                 /____/        
+#    ___/ / / /_/  __/   ___/ /  __/ /_/ /_/ / / / / /_/ (__  )
+#   /____/_/\__/\___/   /____/\___/\__/\__/_/_/ /_/\__, /____/
+#                                                 /____/
 #
 # Title of your website
-title: "Akshay Kumar Vikram"
+title: "Chris Henrick – Web Development, Data Visualization, GIS, Maps, and Cartography"
 
+title_short: "Akshay Kumar Vikram"
 
 # The slogan describes your website and is used on homepage in <title> and other important places
-slogan: "An Awesome Data Scientist"
-
+slogan: "Data analytics, Data Visualization, Machine Learning, Artificial Intellignce."
 
 # The description is used on homepage and in the footer to quickly describe your website. Use a maximum of 150 characters for SEO-purposes.
-description: "This is my portifolio site"
+description: "The portfolio and technical blog of Akshay Kumar Vikram – provider of professional Data analytics, Data Visualization, Machine Learning, Artificial Intelligence."
 
 # Main author of the website
 # See > authors.yml
-author: phlow
+author: Akshay Kumar Vikram
 
 # This URL is the main address for absolute links. Don't include a slash at the end.
-#
-url: 'https://akshaykumarvikram.github.io/'
+url: 'http://akshaykumarvikram.io'
 baseurl: ''
 
 # This is for the editing function in _/includes/improve_content
 # Leave it empty if your site is not on GitHub/GitHub Pages
-improve_content: https://github.com/Phlow/feeling-responsive/edit/gh-pages
+improve_content: https://github.com/akshaykumarvikram/
 
 # This URL points directly to the images directory making
 # things easier to link to images in posts and templates. It needs a slash at the end.
@@ -37,15 +36,19 @@ improve_content: https://github.com/Phlow/feeling-responsive/edit/gh-pages
 # Example: <img src="{{ site.urlimg }}{{ post.image.title }}" />
 # Markdown-Example for posts ![Image Text]({{ site.urlimg }}image.jpg)
 #
-urlimg: 'https://github.com/akshaykumarvikram/akshaykumarvikram.github.io/tree/master/images'
+urlimg: '/images/'
 
 
 # Logo size is 600x80 pixels
 logo: "logo.png"
 
 
+# Plugins
+plugins: [jekyll-paginate]
+
+
 # Paginates all X entries
-paginate: 5
+paginate: 3
 
 
 # Pagination path › Important for blog page in /blog/ to work
@@ -54,9 +57,26 @@ paginate_path: "blog/page:num"
 
 # Theme works best with Kramdown (using the table of contents function)
 markdown: kramdown
+#highlight: rouge
+
+kramdown:
+  #input: GFM
+  # https://github.com/jekyll/jekyll/pull/4090
+  syntax_highlighter: rouge
+
+  # Rouge Highlighter in Kramdown › http://kramdown.gettalong.org/syntax_highlighter/rouge.html
+  # span, block element options fall back to global
+  syntax_highlighter_opts:
+    # Rouge Options › https://github.com/jneen/rouge#full-options
+    css_class: 'highlight'
+    #line_numbers: true # bad idea, spans don't need linenos and would inherit this option
+    span:
+      line_numbers: false
+    block:
+      line_numbers: true
+      start_line: 1
+
 permalink: /:categories/:title/
-highlight: rouge
-plugins: [jekyll-paginate]
 excerpt_separator: "<!--more-->"
 include: ['.htaccess']
 # Exclude these files from your production _site
@@ -67,6 +87,9 @@ exclude:
     - LICENSE
     - README.md
     - INSTALL.md
+    - tmp
+    - scripts
+    - old_blog_content
 
 
 # The language setting is used in /includes/header.html for html-settings
@@ -99,10 +122,10 @@ defaults:
       path: "" 				# an empty string here means all files in the project
       type: "pages"
     values:
-      show_meta: false 	# Hide metadata for all pages
+      show_meta: true 	# Hide metadata for all pages
       # sidebar:    		# Possible values › left, right › by default there will be no sidebar
       comments: false
-      author: akshay     # Default author for pages
+      author: Akshay Kumar Vikram     # Default author for pages
   -
     scope:
       path: ""
@@ -110,8 +133,8 @@ defaults:
     values:
       show_meta: true   # Show metadata for all posts
       # sidebar:        # Possible values › left, right › by default there will be no sidebar
-      comments: false
-      author: akshay    # Default author for posts
+      comments: true
+      author: Akshay Kumar Vikram     # Default author for posts
 
 
 
@@ -133,10 +156,10 @@ defaults:
 #   ___/ / /___/ /_/ /
 #  /____/_____/\____/    Verify Website to Webmaster Tools
 
-# google_author:             ""
-# google_site_verification:  ""
-# bing_webmastertools_id:    ""
-# alexa_verify_id:           ""
+google_author:             "https://plus.google.com/u/0/103791827597799558729"
+google_site_verification:  "hb0oFgJAnd2i2LvJYSEIofF5sc24xc8hx2tTNittvHA"
+# bing_webmastertools_id:    "0FB4C028ABCF07C908C54386ABD2D97F"
+# alexa_verify_id:         ""
 
 
 
@@ -167,11 +190,11 @@ msapplication_tilecolor:                "#fabb00"
 #    / __/ / /_/ / /__/  __/ /_/ / /_/ / /_/ / ,<
 #   /_/    \__,_/\___/\___/_.___/\____/\____/_/|_|      Facebook-Optimization › http://j.mp/fb_optimize
 
-# og_image:                         ""
-# og_locale:                        "en_EN"
-# og_type:                          "website"
-# og_title:                         ""
-# og_description:                   ""
+#og_image:                           "http://images.phlow.de/phlow/phlow_de-logo-512x.png"
+#og_locale:                          "en_EN"
+#og_type:                            "website"
+#og_title:                           "Feeling Responsive – A Responsive Theme for Jekyll"
+#og_description:                     "Feeling Responsive is built on the fabulous Foundation Framework and comes with lots of features to show your content right."
 # og_url:                           ""
 # og_site_name:                     ""
 
@@ -185,6 +208,8 @@ msapplication_tilecolor:                "#fabb00"
 #  Open _data/socialmedia.yml to adjust the left and right topbar navigation
 #
 
+socialmedia:
+    twitter: '@kingakv'
 
 #        ____  _
 #       / __ \(_)________ ___  _______
@@ -195,7 +220,7 @@ msapplication_tilecolor:                "#fabb00"
 #
 # used in _includes/comments
 
-# disqus_shortname: 
+disqus_shortname: akshay
 
 
 #      _____
@@ -219,7 +244,7 @@ sass:
 #
 # used in _includes/footer_scripts
 
-# google_analytics_tracking_id: 
+google_analytics_tracking_id: 'UA-69968207-1'
 
 
 

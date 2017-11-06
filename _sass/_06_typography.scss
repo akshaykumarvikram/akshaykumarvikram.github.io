@@ -27,19 +27,19 @@ a,
 a:link {}
 
 a:visited {
-        border-bottom: $grey-2;
+    border-bottom: $grey-2;
 }
 
 a:hover {
-        color: darken( $ci-1, 10% );
+    color: $anchor-font-color-hover;
 }
 
 a:focus {
-        color: lighten( $ci-1, 20% );
+    color: lighten( $anchor-font-color, 20% );
 }
 
 a:active {
-        color: darken( $ci-1, 20% );
+    color: darken( $anchor-font-color, 20% );
 }
 
 
@@ -48,10 +48,13 @@ a:active {
 ------------------------------------------------------------------- */
 
 p {
-    -webkit-hyphens: $body-hyphenation;
-    -moz-hyphens: $body-hyphenation;
-    -ms-hyphens: $body-hyphenation;
-    hyphens: $body-hyphenation;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+    -ms-word-break: break-all;
+    /* Non standard for webkit */
+    word-break: break-word;
 }
 p a,
 article a {
@@ -82,31 +85,32 @@ p.button a {
 h1, h2, h3, h4, h5, h6 {
     font-family: $header-font-family;
     font-weight: normal;
+    line-height: 1.2em;
     padding: 0;
 }
 
 h1 {
     font-size: $font-size-h1;
-    margin-top: 0;
+    margin: 20px 0 20px 0;
 }
 h2 {
     font-size: $font-size-h2;
-    margin: 1.563em 0 0 0;
+    margin: 20px 0 20px 0;
 }
     .blog-index h2 {
         margin-top: 0;
     }
 h3 {
     font-size: $font-size-h3;
-    margin: 1.152em 0 0 0;
+    margin: 20px 0 20px 0;
 }
 h4 {
     font-size: $font-size-h4;
-    margin: 1.152em 0 0 0;
+    margin: 15px 0 15px 0;
 }
 h5 {
     font-size: $font-size-h5;
-    margin: 1em 0 0 0;
+    margin: 1em 0 1em 0;
 }
 
 
@@ -232,10 +236,10 @@ blockquote {
     position: relative;
     border: none;
     margin: 0 30px 30px 30px;
-    color: #4b4b4d
+    // color: #4b4b4d
 }
 
-    blockquote p {font-style: italic; color: $grey-10; }
+    blockquote p {font-style: italic; color: $text-color; }
 
     blockquote:before {
         display:block;content:"\00BB";
